@@ -1,0 +1,17 @@
+potected/runtime/*
+htdocs/assets/*
+Thumbs.db
+.buildpath
+.project
+.settings/
+.DS_Store
+nbproject/
+data/*
+data/logs/*
+data/logs/shell/*
+data/upload_tmp/*
+data/tmp/*
+application/newbee/config/mode.conf
+application/newbee/config/local
+*.swp
+tmp

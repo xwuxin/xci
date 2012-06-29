@@ -1,0 +1,21 @@
+<?php
+/*
+ * Created on 2012-3-13
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+
+$lang['required'] = "您还未填写%s";
+$lang['max_length'] = "您填写的%s超过字数限制";
+$lang['min_length'] = "%s过短";
+$lang['numeric'] = "%s只能为数字";
+$lang['integer'] = "%s必须为一个整数";
+$lang['valid_email'] = "%s不正确";
+$lang['valid_ip'] = "%s有误";
+$lang['matches'] = "%s有误";
+$lang['exact_length'] = "%s长度不正确";
+$lang['alpha'] = "%s只能为字母";
+$lang['alpha_dash'] = "%s只能为字母/数字/下划线/破折号";
+$lang['alpha_numeric'] = "%s只能为字母和数字";
+$lang['is_exist'] = "%s已经存在，请更换";

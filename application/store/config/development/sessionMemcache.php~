@@ -1,0 +1,13 @@
+<?php
+
+/*
+ * 存储session到指定的memcache服务器
+ * @author qixiaopeng<qixiaopeng@55tuan.com>
+ */
+return array(
+	array(
+		'host' => '127.0.0.1',
+		'port' => 40000,
+	),
+);
+?>

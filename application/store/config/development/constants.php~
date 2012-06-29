@@ -1,0 +1,108 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| File and Directory Modes
+|--------------------------------------------------------------------------
+|
+| These prefs are used when checking and setting modes when working
+| with the file system.  The defaults are fine on servers with proper
+| security, but you may wish (or even need) to change the values in
+| certain environments (Apache running a separate process for each
+| user, PHP under CGI with Apache suEXEC, etc.).  Octal values should
+| always be used to set the mode correctly.
+|
+*/
+define('FILE_READ_MODE', 0644);
+define('FILE_WRITE_MODE', 0666);
+define('DIR_READ_MODE', 0755);
+define('DIR_WRITE_MODE', 0777);
+
+
+/*
+|--------------------------------------------------------------------------
+| File Stream Modes
+|--------------------------------------------------------------------------
+|
+| These modes are used when working with fopen()/popen()
+|
+*/
+
+define('FOPEN_READ',							'rb');
+define('FOPEN_READ_WRITE',						'r+b');
+define('FOPEN_WRITE_CREATE_DESTRUCTIVE',		'wb'); // truncates existing file data, use with care
+define('FOPEN_READ_WRITE_CREATE_DESTRUCTIVE',	'w+b'); // truncates existing file data, use with care
+define('FOPEN_WRITE_CREATE',					'ab');
+define('FOPEN_READ_WRITE_CREATE',				'a+b');
+define('FOPEN_WRITE_CREATE_STRICT',				'xb');
+define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
+
+define ('IMG_ALLOW_TYPE',"gif|jpg|png");
+
+/**应用前缀**/
+define("APP_PRE", "newbee_");
+
+/** memcache lock **/
+define('NEWBEE_LOCK_PRE',APP_PRE.'lock_');
+define('LOCK_EXPIRY', "600");
+
+/**memcache city key**/
+define("NEWBEE_CITY_LIST",APP_PRE."city_list");
+define("NEWBEE_DISTRICTS_PRE",APP_PRE."DISTRICTS_");
+define("NEWBEE_AREAS_PRE",APP_PRE."AREAS_");
+define("NEW_CITY_EXPIRY", 600);
+
+//memcache分类缀
+define('NEWBEE_CAT_PRE',APP_PRE.'cat_');
+
+define("NEWBEE_EXPIR", 600);
+//====================以下线上需要修改start====================
+
+/**
+ * image upload FTP config
+ * @author wangyucheng3@55tuan.com
+ */
+define ('IMG_FTP_IP','ftp.xixu.org');
+define ('IMG_FTP_USER','ftpuser');
+define ('IMG_FTP_PASSWORD','ftppassword');
+define ('IMG_FTP_PORT',21);
+define ('IMG_FTP_DEBUG',FALSE);
+define ('IMG_ROOT_PATH',"http://static.xixu.org/");
+define ('SHOP_IMG_ROOT_PATH',IMG_ROOT_PATH."static/shop/");
+define ('SHOP_PREVIEW_URL',"http://shop.55tuan.com/");
+// 支付接口服务器
+define('IPAY_SERVER', 'http://10.8.210.3');
+// 5+3访问域名
+//联合登录服务器域名和路径
+define('UNION_LOGIN_SERVER','newadmin.wowotuan.com');
+define('UNION_LOGIN_PATH','/index.php?r=site/loginapi');
+define('UNION_LOGIN_PORT','8080');
+//联合登录写cookie的域名
+define('UNION_LOGIN_COOKIE_DOMAIN','.wowotuan.com');
+//5+3访问域名
+define('UNION_LOGIN_SERVER_HTTP','http://newadmin.wowotuan.com');
+define('SUPPLIER_CHECK_WSDL','http://sso.55tuan.com:80/sso/services/ssoSupplierService?wsdl');
+
+
+// 消息队列接口 第二个为备用
+define('STOMP_SERVER1', 'tcp://ml-1.55tuan.me:61613');
+define('STOMP_SERVER2', 'tcp://ml-2.55tuan.me:61613');
+// 创建商户的开关
+define("CREATE_CUSTOMER",'1');
+//55tong添加门店
+define('EUB_ADD_SHOP', 'http://10.8.210.176:8021/Service.asmx/CreateMerchant');
+//55tong编辑门店、确认变更门店
+define('EUB_EDIT_SHOP', 'http://10.8.210.176:8021/Service.asmx/ModifyMerchant');
+//55tong提供查询接口
+define('EUB_IS_EXIST_SHOP', 'http://10.8.210.176:8021/Service.asmx/IsExistStore');
+
+//查询门店是否在eub那边有关联,是否已经绑定
+define('EUB_CHECK_RELATION_SHOP_INFO', 'http://10.8.210.176:8021/Service.asmx/GetActivityStoreInfo');
+//门店绑定，eub也做绑定操作
+define('EUB_BIND_SHOP', 'http://10.8.210.176:8021/Service.asmx/AddStoreRelation');
+//门店删除绑定，eub也做删除绑定操作
+define('EUB_DEL_BIND_SHOP', 'http://10.8.210.176:8021/Service.asmx/RemoveStoreRelation');
+
+
+/* End of file constants.php */
+/* Location: ./application/config/constants.php */
