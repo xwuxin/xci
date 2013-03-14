@@ -24,7 +24,6 @@
             <ul class="nav">
               <li class="active"><a href="#">首页</a></li>
               <li><a href="#about">关于</a></li>
-              <li><a href="#contact">联系我们</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
