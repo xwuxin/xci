@@ -109,7 +109,7 @@ $autoload['language'] = array('app');
 |
 */
 
-$autoload['model'] = array('common/newbee_model');
+$autoload['model'] = array();
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
